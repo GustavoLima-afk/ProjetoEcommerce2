@@ -1,0 +1,17 @@
+create database dbLima;
+use dbLima;
+
+create table tbUsuario(
+Id int primary key,
+Nome varchar(40) not null,
+Email varchar(40) not null,
+senha int not null
+);
+
+create table tbProduto(
+IdProd int primary key,
+NomeProd varchar(30) not null,
+Descricao varchar(45) not null,
+Preco decimal(8,2) not null,
+Quantidade int not null
+);
