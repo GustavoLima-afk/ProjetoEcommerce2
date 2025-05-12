@@ -10,7 +10,7 @@ senha int not null
 
 create table tbProduto(
 IdProd int primary key,
-NomeProd varchar(30) not null,
+Nome varchar(30) not null,
 Descricao varchar(45) not null,
 Preco decimal(8,2) not null,
 Quantidade int not null
