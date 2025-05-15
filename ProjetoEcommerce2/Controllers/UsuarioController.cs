@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoEcommerce.Repositorio;
 using ProjetoEcommerce2.Repositorio;
 
 namespace ProjetoEcommerce2.Controllers
