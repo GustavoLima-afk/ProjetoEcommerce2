@@ -27,7 +27,7 @@ namespace ProjetoEcommerce2.Controllers
             var usuario = _usuarioRepositorio.ObterUsuario(email);
             if (usuario != null && usuario.Senha == senha)
             {
-                return RedirectToAction("Index", "Cliente");
+                return RedirectToAction("Index", "Produto");
             }
 
             ModelState.AddModelError("", "Email ou senha inválidos.");

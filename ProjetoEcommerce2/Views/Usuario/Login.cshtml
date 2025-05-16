@@ -1,17 +1,18 @@
-﻿@model ProjetoEcommerce2.Models.Usuario;
+﻿@model ProjetoEcommerce2.Models.Usuario
 
-<link href="~/css/login.css" rel="stylesheet" />
+<link rel="stylesheet" href="@(Url.Content("~/css/login.css"))" />
 
-<h1>Login</h1>
+<h1 class="login-title">Login</h1>
 
-<form asp-action="Login" method="post">
-    <div>
+<form asp-action="Login" method="post" class="login-form">
+    <div class="form-group">
         <label>Email:</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" required class="form-control" />
     </div>
-    <div>
+    <div class="form-group">
         <label>Senha:</label>
-        <input type="password" name="senha" required />
+        <input type="password" name="senha" required class="form-control" />
     </div>
-    <button type="submit">Login</button>
+    <button type="submit" class="btn btn-primary">Login</button>
 </form>
+

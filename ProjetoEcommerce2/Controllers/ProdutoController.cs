@@ -47,7 +47,7 @@ namespace ProjetoEcommerce.Controllers
         // Carrega a lista de Cliente que envia a alteração (post)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult EditarProduto(int id, [Bind("CodProd, Nome, Descricao, Quantidade, Preco")] Produto produto)
+        public IActionResult EditarProduto(int id, [Bind("IdProd, Nome, Descricao, Quantidade, Preco")] Produto produto)
         {
             if (id != produto.IdProd)
             {

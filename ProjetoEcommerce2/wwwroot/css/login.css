@@ -1,47 +1,63 @@
 ﻿.login-title {
     text-align: center;
-    color: blue;
-    margin-bottom: 20px;
+    color: #0077b6; /* azul moderno */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .login-form {
-    width: 300px;
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: #f4f4f4;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
     .form-group label {
         display: block;
-        margin-bottom: 10px;
-        font-weight: 700;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
     }
 
 .form-control {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #555;
-    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
 }
 
+    .form-control:focus {
+        border-color: #00b4d8;
+        outline: none;
+    }
+
+/* Botão */
 .btn-primary {
-    background-image: linear-gradient(purple,aqua);
-    color: #fff;
-    padding: 10px 15px;
+    background-color: #cceeff;
+    color: #000; /* cor escura para contraste */
+    padding: 12px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     width: 100%;
-    margin: 0 auto;
-    transition: 0.1s color ease;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
     .btn-primary:hover {
-        background: red;
+        background-color: #b3e6ff;
+        transform: translateY(-2px);
     }
