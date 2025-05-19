@@ -2,16 +2,18 @@ create database dbLima;
 use dbLima;
 
 create table tbUsuario(
-Id int primary key,
+Id int primary key auto_increment,
 Nome varchar(40) not null,
 Email varchar(40) not null,
 senha int not null
 );
 
 create table tbProduto(
-IdProd int primary key,
+IdProd int primary key auto_increment,
 Nome varchar(30) not null,
 Descricao varchar(45) not null,
 Preco decimal(8,2) not null,
 Quantidade int not null
 );
+
+insert into Usuario(Nome, Email, Senha) values ('Gustavo', 'slima.gusta@gmail.com', '12345678');
